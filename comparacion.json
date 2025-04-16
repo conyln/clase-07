@@ -1,42 +1,42 @@
 [
   {
-    "planeta": "Mercurio",
-    "diametro": 4880,
+    "felino": "Güiña",
+    "diametro": 45,
     "comparado": 0.38
   },
   {
-    "planeta": "Venus",
-    "diametro": 12104,
+    "planeta": "Pajonal",
+    "diametro": 90,
     "comparado": 0.95
   },
   {
-    "planeta": "Tierra",
-    "diametro": 12756,
+    "planeta": "Desierto",
+    "diametro": 80,
     "comparado": 1
   },
   {
-    "planeta": "Marte",
-    "diametro": 6794,
+    "planeta": "Doméstico",
+    "diametro": 75,
     "comparado": 0.53
   },
   {
-    "planeta": "Júpiter",
-    "diametro": 142984,
+    "planeta": "Puma",
+    "diametro": 280,
     "comparado": 11.21
   },
   {
-    "planeta": "Saturno",
-    "diametro": 120536,
+    "planeta": "Geoffroy",
+    "diametro": 125,
     "comparado": 9.45
   },
   {
-    "planeta": "Urano",
-    "diametro": 51118,
+    "planeta": "Andino",
+    "diametro": 115,
     "comparado": 4.01
   },
   {
-    "planeta": "Neptuno",
-    "diametro": 49532,
+    "planeta": "Colocolo",
+    "diametro": 100,
     "comparado": 3.88
   }
 ]
