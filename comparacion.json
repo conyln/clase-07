@@ -1,42 +1,42 @@
 [
   {
-    "planeta": "Güiña",
+    "felino": "Güiña",
     "diametro": 45,
-    "comparado": 0.38
-  },
-  {
-    "planeta": "Pajonal",
-    "diametro": 90,
-    "comparado": 0.95
-  },
-  {
-    "planeta": "Desierto",
-    "diametro": 80,
     "comparado": 1
   },
   {
-    "planeta": "Doméstico",
+    "felino": "Pajonal",
+    "diametro": 90,
+    "comparado": 2
+  },
+  {
+    "felino": "Desierto",
+    "diametro": 80,
+    "comparado": 1.78
+  },
+  {
+    "felino": "Doméstico",
     "diametro": 75,
-    "comparado": 0.53
+    "comparado": 1.67
   },
   {
-    "planeta": "Puma",
+    "felino": "Puma",
     "diametro": 280,
-    "comparado": 11.21
+    "comparado": 6.22
   },
   {
-    "planeta": "Geoffroy",
+    "felino": "Geoffroy",
     "diametro": 125,
-    "comparado": 9.45
+    "comparado": 2.78
   },
   {
-    "planeta": "Andino",
+    "felino": "Andino",
     "diametro": 115,
-    "comparado": 4.01
+    "comparado": 2.56
   },
   {
-    "planeta": "Colocolo",
+    "felino": "Colocolo",
     "diametro": 100,
-    "comparado": 3.88
+    "comparado": 2.22
   }
 ]
