@@ -5,51 +5,119 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Séptima clase</title>
         <style>
-            [data-theme="light"] { --color-bg: white; --color-fg: #263238; }
-
-            [data-theme="dark"] { --color-bg: #263238; --color-fg: #eceff1; }
-
-            * { margin: 0; padding: 0; }
-
-            body { font-family: monospace; color: var(--color-fg); background: var(--color-bg); }
-
-            article { padding: 1rem; width: min(90%, 500px); margin: 2rem auto; text-align: center; }
-
-            article:nth-child(3) { width: min(90%, 1000px); margin-bottom: 5rem; }
-
-            h2 { font-size: 1.5rem; margin: 1.5rem auto; line-height: 1; }
-
-            p { margin: 0.75rem auto; line-height: 1.5; }
-
-            input[type="radio"] { accent-color: #232323; }
-
-            @keyframes pedrope {
-                0% { transform: rotate(0); }
-                100% { transform: rotate(360deg); }
+            [data-theme="light"] {
+                --color-bg: white;
+                --color-fg: #263238;
             }
 
-            figure { width: 50%; margin: 2rem auto; background: #fff; }
+            [data-theme="dark"] {
+                --color-bg: #263238;
+                --color-fg: #eceff1;
+            }
 
-            img { width: 100%; }
+            * {
+                margin: 0;
+                padding: 0;
+            }
 
-            img.animate { animation: pedrope 2s linear infinite; }
+            body {
+                font-family: monospace;
+                color: var(--color-fg);
+                background: var(--color-bg);
+            }
 
-            div.portrait > svg { font-size: 7.5%; stroke-width: 0; fill: white; alignment-baseline: middle; text-anchor: start; display: block; margin:3rem; }
+            article {
+                padding: 1rem;
+                width: min(90%, 500px);
+                margin: 2rem auto;
+                text-align: center;
+            }
 
-            div.landscape { display: inline-block; }
+            article:nth-child(3) {
+                width: min(90%, 1000px);
+                margin-bottom: 5rem;
+            }
 
-            div.landscape > svg { width: 10%; font-size: 25%; stroke-width: 0; fill: black; alignment-baseline: middle; text-anchor: middle; }
+            h2 {
+                font-size: 1.5rem;
+                margin: 1.5rem auto;
+                line-height: 1;
+            }
 
-            div.landscape > svg:nth-child(5) { margin-left:3%; margin-right:4%; }
+            p {
+                margin: 0.75rem auto;
+                line-height: 1.5;
+            }
 
-            div.landscape > svg:nth-child(7) { margin-left:2%; }
+            input[type="radio"] {
+                accent-color: #232323;
+            }
+
+            @keyframes pedrope {
+                0% {
+                    transform: rotate(0);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            figure {
+                width: 50%;
+                margin: 2rem auto;
+                background: #fff;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            img.animate {
+                animation: pedrope 2s linear infinite;
+            }
+
+            div.portrait > svg {
+                font-size: 7.5%;
+                stroke-width: 0;
+                fill: white;
+                alignment-baseline: middle;
+                text-anchor: start;
+                display: block;
+                margin: 3rem;
+            }
+
+            div.landscape {
+                display: inline-block;
+            }
+
+            div.landscape > svg {
+                width: 10%;
+                font-size: 25%;
+                stroke-width: 0;
+                fill: black;
+                alignment-baseline: middle;
+                text-anchor: middle;
+            }
+
+            div.landscape > svg:nth-child(5) {
+                margin-left: 3%;
+                margin-right: 4%;
+            }
+
+            div.landscape > svg:nth-child(7) {
+                margin-left: 2%;
+            }
 
             @media (orientation: portrait) {
-                div.landscape { display: none; }
+                div.landscape {
+                    display: none;
+                }
             }
 
             @media (orientation: landscape) {
-                div.portrait { display: none; }
+                div.portrait {
+                    display: none;
+                }
             }
         </style>
     </head>
@@ -62,13 +130,9 @@
                 <input type="radio" name="stroke" value="1.75" onchange="primera(this.value)" /> BOLD
             </p>
             <!--un svg que tomo de https://feathericons.com/-->
-            <svg 
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" 
-            fill="none"
-            stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="23 4 23 10 17 10"></polyline>
-            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
             </svg>
             <!--usando input type="range"-->
             <p><input type="range" min="0" max="359" step="1" value="0" onchange="segunda(this.value)" /></p>
@@ -85,12 +149,24 @@
             </figure>
         </article>
 
-<article>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/48lxT5qJF0yYyf2z4wB4xW?utm_source=generator&theme=0" width="25%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</article>
+        <article>
+            <iframe
+                style="border-radius: 12px;"
+                src="https://open.spotify.com/embed/track/48lxT5qJF0yYyf2z4wB4xW?utm_source=generator&theme=0"
+                width="25%"
+                height="100"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+            ></iframe>
+        </article>
 
         <article>
-            <h2>Y cerremos con "un SVG responsive": <br> ⋆ gatitos chilenos ⋆</h2>
+            <h2>
+                Y cerremos con "un SVG responsive": <br />
+                ⋆ gatitos chilenos ⋆
+            </h2>
             <div class="portrait"></div>
             <div class="landscape"></div>
         </article>
@@ -130,8 +206,43 @@
                 const svgMobile = document.querySelectorAll("div.portrait")[0];
                 const svgOther = document.querySelectorAll("div.landscape")[0];
                 data.forEach((v, i) => {
-                    svgMobile.innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 ${v.comparado*2}"><circle cx="12" cy="${v.comparado}" r="${v.comparado}" fill="white"></circle><text x="${v.comparado + 13}" y="${v.comparado+0.3}">${v.felino}</text></svg>`;
-                    svgOther.innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 33"><circle cx="12" cy="13" r="${v.comparado}" fill="black"></circle><text x="12" y="30">${v.felino}</text></svg>`;
+                    let divider = 6.22;
+                    if (v.comparado < 6.22) {
+                        divider = 3.4;
+                    }
+                    svgMobile.innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 ${v.comparado * 2}"><circle cx="12" cy="${v.comparado}" r="${v.comparado}" fill="white"></circle><text x="${v.comparado + 13}" y="${
+                        v.comparado + 0.3
+                    }">${v.felino}</text></svg>`;
+                    svgOther.innerHTML += `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 22.2px;
+      }
+      .label {
+        font-size: 48px;
+        text-anchor: middle;
+        fill: black;
+      }
+    </style>
+  </defs>
+  <g transform="scale(${v.comparado / divider})">
+  <g id="emoji-line">
+    <path class="cls-1" d="M138.4,397.1c-25.9,11.1-54.6,9.3-54.6,9.3-18.6,1.6-34.6-44.6-27.6-52.6l36.9-56.7-19.4-38s55.6-15.7,87.6,23.2c3.8,4.7,8.8,8.3,14.2,11,.3.2.7.3,1,.5,28.8,14.3,61.6,17.5,93.2,11.1,80.2-16.2,156.3-15.2,241.1,24.6,84.7,39.8,164.8-25,154.9-83.3-8.8-51.6,39.6-84.3,75-55.6"/>
+    <path class="cls-1" d="M178.3,542.4c6.7-24.5,94.3-40.5,94.3-40.5,0,0,35.9-13.3,15.8-50"/>
+    <path class="cls-1" d="M203.3,369.3c-17.1,20.4-43.3,53.4-4.9,101.8,0,0-75.1,31.7-66.7,89.3,0,0,4,27.5,26.7,26.7"/>
+    <path class="cls-1" d="M261.1,555.9c-12.8,80.6,26.5,67.3,33.5,62.9,12.8-8,20.5-109.5,43.9-125.7,17.7-12.3,90.7-3.4,90.7-3.4"/>
+    <path class="cls-1" d="M427.1,459.2c1,19.4,8.4,37.8,19.3,53.8,7.4,10.8,20,25.8,16.1,33.2-49.8,94.4,6.9,78,12,68.5,35.4-65.7,68.1-45.6,51.6-116.9,0,0,58.6-20.1,61.3-88.6"/>
+    <path class="cls-1" d="M535,506.6s26.3,35.6,86.2,29.9c0,0-37,75.1,0,84.7,21.3,5.5,52.5-124,52.5-124,0,0-29.6-27.2-39.8-48.5"/>
+  </g>
+  </g>
+  <text x="400" y="785" class="label">${v.felino}</text>
+</svg>
+`;
                 });
             }
             quinta().catch((error) => console.error(error));
